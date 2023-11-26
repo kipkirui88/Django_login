@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-5">
+    <div class="card text-center">
+      <div class="card-body">
+        <h2 class="card-title">Welcome to InterIntel, {{ user.username }}!</h2>
+        <p class="card-text">You have successfully logged in. Explore and enjoy our services.</p>
+        <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
